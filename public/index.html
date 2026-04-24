@@ -11,7 +11,7 @@
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  if(!f._fbq)f._fbq=n;n.push=n.loaded=!0;n.version='2.0';
   n.queue=[];t=b.createElement(e);t.async=!0;
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
@@ -601,7 +601,6 @@
           <div class="floating-card float-2">🥑 300 ideas para tus comidas</div>
           <div class="floating-card float-3">📖 Consejos prácticos y recetas deliciosas</div>
 
-          <!-- Reemplaza esta imagen por tu portada real -->
           <img class="cover" src="cover-keto.png" alt="Portada 300 Recetas Keto">
         </div>
       </div>
@@ -657,7 +656,6 @@
   <section>
     <div class="container split">
       <div class="photo-stack">
-        <!-- Reemplaza estas imágenes por tus archivos -->
         <img class="big-photo" src="keto-food-1.jpg" alt="Comida keto deliciosa">
         <img src="keto-food-2.jpg" alt="Desayuno keto">
         <img src="keto-food-3.jpg" alt="Cena keto">
@@ -730,7 +728,7 @@
       <div class="pricing-box">
         <div class="eyebrow">Acceso al recetario</div>
         <h3 style="margin:0; font-size:28px;">300 Recetas Keto</h3>
-        <div class="price">$317.84 MXN <small>pago único</small></div>
+        <div class="price">US$20 <small>pago único</small></div>
         <div class="price-note">
           Empieza hoy con una guía amplia, práctica y hecha para ayudarte a disfrutar más tu alimentación keto.
         </div>
@@ -805,7 +803,6 @@
   </div>
 
   <script>
-    // Evento para botones CTA
     document.querySelectorAll('.cta-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         if (typeof fbq !== 'undefined') {
