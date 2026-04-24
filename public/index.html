@@ -6,14 +6,21 @@
   <title>300 Recetas Keto | Come rico, siéntete mejor</title>
   <meta name="description" content="Descubre 300 recetas cetogénicas fáciles: desayunos, almuerzos y cenas deliciosas para transformar tu alimentación con ingredientes simples." />
 
-  <!-- Meta Pixel Code -->
+  <!-- Meta Pixel Code CORREGIDO -->
   <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
-  s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=!0;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}
   (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
   fbq('init', '1398803652004023');
@@ -24,6 +31,7 @@
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1398803652004023&ev=PageView&noscript=1"/>
   </noscript>
+  <!-- End Meta Pixel Code -->
 
   <style>
     :root {
@@ -468,7 +476,7 @@
         </div>
 
         <div class="hero-actions">
-          <a class="btn cta-btn" href="salir.html">Accede a las recetas ahora</a>
+          <a class="btn cta-btn" href="https://go.hotmart.com/V105483789W" onclick="trackCheckout(event, this)">Accede a las recetas ahora</a>
           <a class="btn secondary" href="#incluye">Ver qué incluye</a>
         </div>
 
@@ -529,7 +537,7 @@
         </div>
 
         <div style="margin-top:22px;">
-          <a class="btn cta-btn" href="salir.html">Accede a las recetas</a>
+          <a class="btn cta-btn" href="https://go.hotmart.com/V105483789W" onclick="trackCheckout(event, this)">Accede a las recetas</a>
         </div>
       </div>
     </div>
@@ -556,7 +564,7 @@
         <div class="price">US$20 <small>pago único</small></div>
         <div class="price-note">Empieza hoy con una guía amplia, práctica y hecha para ayudarte a disfrutar más tu alimentación keto.</div>
 
-        <a class="btn cta-btn" style="width:100%;" href="salir.html">Accede a las recetas ahora</a>
+        <a class="btn cta-btn" style="width:100%;" href="https://go.hotmart.com/V105483789W" onclick="trackCheckout(event, this)">Accede a las recetas ahora</a>
 
         <div class="mini-badges">
           <span>✅ Formato digital</span>
@@ -586,7 +594,7 @@
           <p>Si quieres dejar de improvisar y tener una colección amplia de recetas cetogénicas listas para inspirarte todos los días, esta guía puede ser justo lo que estabas buscando.</p>
         </div>
         <div style="display:flex; justify-content:center; align-items:center;">
-          <a class="btn cta-btn" href="salir.html">Accede a las recetas</a>
+          <a class="btn cta-btn" href="https://go.hotmart.com/V105483789W" onclick="trackCheckout(event, this)">Accede a las recetas</a>
         </div>
       </div>
     </div>
@@ -599,8 +607,24 @@
   </footer>
 
   <div class="sticky-cta">
-    <a class="btn cta-btn" href="salir.html">Accede a las recetas ahora</a>
+    <a class="btn cta-btn" href="https://go.hotmart.com/V105483789W" onclick="trackCheckout(event, this)">Accede a las recetas ahora</a>
   </div>
+
+  <script>
+    function trackCheckout(event, element) {
+      event.preventDefault();
+
+      var url = element.getAttribute('href');
+
+      if (typeof fbq === 'function') {
+        fbq('track', 'InitiateCheckout');
+      }
+
+      setTimeout(function() {
+        window.location.href = url;
+      }, 1200);
+    }
+  </script>
 
 </body>
 </html>
